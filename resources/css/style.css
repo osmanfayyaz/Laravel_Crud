@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+
+@font-face {
+    font-family: 'BrandonGrotesque-Black';
+    src: url('../fonts/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonGrotesque-Black.otf')  format('opentype'),
+    url('../fonts/BrandonGrotesque-Black.woff') format('woff'),
+    url('../fonts/BrandonGrotesque-Black.ttf')  format('truetype'),
+    url('../fonts/BrandonGrotesque-Black.svg#BrandonGrotesque-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Bold';
+    src: url('../fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonGrotesque-Bold.otf')  format('opentype'),
+    url('../fonts/BrandonGrotesque-Bold.woff') format('woff'),
+    url('../fonts/BrandonGrotesque-Bold.ttf')  format('truetype'),
+    url('../fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Medium';
+    src: url('../fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonGrotesque-Medium.otf')  format('opentype'),
+    url('../fonts/BrandonGrotesque-Medium.woff') format('woff'),
+    url('../fonts/BrandonGrotesque-Medium.ttf')  format('truetype'),
+    url('../fonts/BrandonGrotesque-Medium.svg#BrandonGrotesque-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Regular';
+    src: url('../fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonGrotesque-Regular.otf')  format('opentype'),
+    url('../fonts/BrandonGrotesque-Regular.woff') format('woff'),
+    url('../fonts/BrandonGrotesque-Regular.ttf')  format('truetype'),
+    url('../fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Light';
+    src: url('../fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonGrotesque-Light.otf')  format('opentype'),
+    url('../fonts/BrandonGrotesque-Light.woff') format('woff'),
+    url('../fonts/BrandonGrotesque-Light.ttf')  format('truetype'),
+    url('../fonts/BrandonGrotesque-Light.svg#BrandonGrotesque-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamRounded-MediumItalic';
+    src: url('../fonts/GothamRounded-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamRounded-MediumItalic.otf')  format('opentype'),
+    url('../fonts/GothamRounded-MediumItalic.woff') format('woff'),
+    url('../fonts/GothamRounded-MediumItalic.ttf')  format('truetype'),
+    url('../fonts/GothamRounded-MediumItalic.svg#GothamRounded-MediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Medium';
+    src: url('../fonts/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamRounded-Medium.otf')  format('opentype'),
+    url('../fonts/GothamRounded-Medium.woff') format('woff'),
+    url('../fonts/GothamRounded-Medium.ttf')  format('truetype'),
+    url('../fonts/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded-LightItalic';
+    src: url('../fonts/GothamRounded-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamRounded-LightItalic.otf')  format('opentype'),
+    url('../fonts/GothamRounded-LightItalic.woff') format('woff'),
+    url('../fonts/GothamRounded-LightItalic.ttf')  format('truetype'),
+    url('../fonts/GothamRounded-LightItalic.svg#GothamRounded-LightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Light';
+    src: url('../fonts/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamRounded-Light.otf')  format('opentype'),
+    url('../fonts/GothamRounded-Light.woff') format('woff'),
+    url('../fonts/GothamRounded-Light.ttf')  format('truetype'),
+    url('../fonts/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Bold';
+    src: url('../fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamRounded-Bold.otf')  format('opentype'),
+    url('../fonts/GothamRounded-Bold.woff') format('woff'),
+    url('../fonts/GothamRounded-Bold.ttf')  format('truetype'),
+    url('../fonts/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Book';
+    src: url('../fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamRounded-Book.otf')  format('opentype'),
+    url('../fonts/GothamRounded-Book.woff') format('woff'),
+    url('../fonts/GothamRounded-Book.ttf')  format('truetype'),
+    url('../fonts/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --primary-color:#45ccb8;
+    --light-color: #2b3032a1;
+    --border-color:#2b303218;
+    --text-color:darkblue;
+    --lightgray:#808080;
+    --GothamRounded-Black:"GothamRounded-Book";
+    --GothamRounded-Bold:"GothamRounded-Bold";
+    --GothamRounded-Light:"GothamRounded-Light";
+    --GothamRounded-LightItalic:"GothamRounded-LightItalic";
+    --GothamRounded-Medium:"GothamRounded-Medium";
+    --GothamRounded-MediumItalic:"GothamRounded-MediumItalic";
+
+}
+.primary-color{
+    color: var(--light-color)!important;
+}
+.text-color{
+    color: var(--text-color);
+}
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.lightblue{
+    color: lightblue;
+}
+header{
+    background-color: var(--primary-color);
+    font-family: var(--GothamRounded-Medium);
+    
+}
+header .site-title{
+   width: 200px;
+   height: 50px;    
+}
+.container .dropdown-toggle,
+.container .dropdown-item{
+    font-size:0.7em;
+    background: transparent
+    }
+.header-links a{
+    font-size:0.9em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* .navbar-nav .nav-item .fa-search,
+.navbar-nav .nav-item .fa-shopping-basket{
+    width: 35px;
+    height: 28px;
+    padding: 5px 10px;
+} */
+
+/* nevigation menu */
+.navbar-nav{
+    padding: 0.9em 0em;
+    margin-left: 5.5em;
+}
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--lightgray)!important;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+.navbar-nav .basket-icon{
+    margin-right: 6.5em !important;
+}
+/* slider one */
+
+.slider-one img {
+	width: 100%;
+	height: 80vh;
+}
+.site-slider{
+    position: relative;
+}
+.position-top{
+    position: absolute;
+    top: 50%;
+}
+.site-slider .slider-btn .pre,
+.site-slider .slider-btn .next{
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    margin: 0 15px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    color: wheat;
+    
+}
+.site-slider:hover .slider-btn .pre,
+.site-slider:hover .slider-btn .next{
+    opacity: 1;
+}
+.right-0{
+    right: 0;
+}
+/* sick dot */
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0em;
+    padding: 1rem 0;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    list-style-type: none;
+}
+.slick-dots li{
+    margin: 0.6rem;
+}
+.slick-dots button {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: white;
+    text-indent: -9999px;
+    border-radius: 100%;
+}
+.slick-dots li.slick-active button{
+    transform:scale(2);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
+}
