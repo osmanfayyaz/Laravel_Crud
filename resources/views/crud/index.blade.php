@@ -2,125 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Store</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!--Fontawesome-->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- custom class -->
-    <link rel="stylesheet" href="css/store.css">
+    <title>Crud</title>
+       <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Google Fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+      <!-- JQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+      <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
 </head>
+    <style>
+    .container{
+      padding-top:100px;
+    }
+    .modal-dialog{
+      /* width:50% !important;
+      max-width:1000px !important; */
+      max-height:50% !important;
+    }
+    .fas.fa-user.prefix.grey-text, .fas.fa-user-friends.prefix.grey-text ,
+    .fas.fa-venus.prefix.grey-text,.fa.fa-map-marker.prefix.grey-text, 
+    .fa.fa-map-marker-alt.prefix.grey-text, .fas.fa-address-card.prefix.grey-text{
+   
+     color:#ddd !important;
+}
+    </style>
 <body>
-<!-- header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-12 text-left bg-primary-color">
-                    <div class="btn-group">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+           <a href="#" class="btn btn-info float-right mb-3" data-toggle="modal" data-target="#exampleModal">Add New Student</a>
+              <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Last Name</th>
+                      <th>Gender</th>
+                      <th>Country</th>
+                      <th>City</th>
+                      <th>Address</th>
+                      <th>Action</th>
+                    </tr>
+                    <tbody>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </tbody>
+              </thead>
+            </table>
 
-                        <button 
-                        class="btn border dropdown-toggle my-md-4 my-2 text-white"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false">USD
-                        </button>
+            <!-- Student modal -->
 
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">ERU -Euro</a>
-                            <a href="#" class="dropdown-item">RS -PKR</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 text-center">
-                    <img class="my-md-3  site-title primary-color" src="images/1logo.png">
-                </div>
-                <div class="col-md-4 col-12 text-right">
-                 <p class="my-md-4 header-links">
-                    <a href="#" class="px-2">Sign In</a> |
-                    <a href="#" class="px-1">Create Account</a>
-                </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid p-0"> 
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                          <ul class="navbar-nav">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">FEATURES</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">COLLECTIONS</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link " href="#">SHOP</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link " href="#">ABOUT US</a>
-                             </li>
-                          </ul>
-                        </div>
-                        <div class="navbar-nav">
-                            <li class="nav-item  rounded-circle mx-2 search-icon">
-                                <i class="fas fa-search"></i>
-                            </li>
-                            <li class="nav-item  rounded-circle mx-2 basket-icon">
-                                    <i class="fas fa-shopping-basket"></i>
-                                </li>
-                        </div>
-                  </nav>
-        </div>
-    </header>
-    <!-- header ends -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-lg modal-right modal-success" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enter Detail Of Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- <div class="modal-body">
+        <form action="" method="post">
 
-    <!-- Main Section -->
-      <main>
-        <!-- first slider -->
-        <div class="container-fluid p-0">
-          <div class="site-slider">
-            <div class="slider-one">
-                <div>
-                  <img src="images/268077.jpg"  alt="">
-                </div>
-                <div>
-                  <img src="images/a3fe8682529794c1668e1c0316cffcd8.jpg"  alt="">
-                </div>
-                <div>
-                  <img src="images/banner3.jpg"  alt="">
-                </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+                 <span class="input-group-text">Lastname</span>
             </div>
-            <div class="slider-btn">
-              <span class="pre position-top"><i class="fas fa-chevron-left"></i></span>
-              <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+            <input type="text" class="form-control" name="firstname">
+            <label data-error="wrong" data-success="right" for="form3">Enter First Name</label>
+            &nbsp;&nbsp;&nbsp;
+            <div class="input-group-prepend">
+                 <span class="input-group-text">Lastname</span>
             </div>
+            <input type="text" class="form-control" name="lastname" placeholder="Enter Last Name">
           </div>
-        </div>
-        <!-- first slider Ends-->
+          <br>
 
-        <!-- second slider Starts -->
-        <div class="container-fluid"></div>
-        <!-- seconf slider end -->
-      </main>
-    <!-- Main Section Ends-->
-    <footer></footer>
-<!-- Javascript -->
+          
+      </div> -->
+      <div class="modal-body mx-3">
+      <form action="{{route('crud.store')}}" method="post">
+      @method('post')
+      @csrf
+      <div class="form-row">
+          <div class="md-form mb-2 col-md-6">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="defaultForm-firstname" class="form-control validate" name="firstname" value="">
+              <label data-error="wrong" data-success="right" for="defaultForm-email">First name</label>
+            </div>
 
-<script src="js/jquery-3.4.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/all.js"></script>
-<script src="js/script.js"></script>
-<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript"src="js/main.js"></script>
+            <div class="md-form mb-2 col-md-6">
+              <i class="fas fa-user-friends prefix grey-text" ></i>
+              <input type="text" id="defaultForm-lasttname" class="form-control validate" name="lasttname">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass"> Last name</label>
+            </div>
+
+            <div class="md-form mb-2 col-md-4">
+              <i class="fas fa-venus prefix grey-text"></i>
+              <input type="text" id="defaultForm-gender" class="form-control validate" name="gender">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Gender</label>
+            </div>
+
+            <div class="md-form mb-2 col-md-4">
+            <i class="fa fa-map-marker prefix grey-text" aria-hidden="true"></i>
+              <input type="text" id="defaultForm-country" class="form-control validate" name="country">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Country</label>
+            </div>
+
+            <div class="md-form mb-2 col-md-4">
+            <i class="fa fa-map-marker-alt prefix grey-text" aria-hidden="true"></i>
+              <input type="text" id="defaultForm-city" class="form-control validate" name="city">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">City</label>
+            </div>
+
+            <div class="md-form col-md-12">
+            <i class="fas fa-address-card prefix grey-text" aria-hidden="true"></i>
+              <input type="text" id="defaultForm-address" class="form-control validate" name="address">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Address</label>
+            </div>
+
+
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success" >Save Details </button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
 
 </body>
 </html>

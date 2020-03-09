@@ -14,9 +14,13 @@ class CreateCrudsTable extends Migration
     public function up()
     {
         Schema::create('cruds', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->text('description');
+            $table->bigIncrements('id');
+            $table->string('firstname');
+            $table->string('lasttname');
+            $table->string('gender');
+            $table->string('country');
+            $table->string('city');
+            $table->string('address');
             $table->timestamps();
         });
     }

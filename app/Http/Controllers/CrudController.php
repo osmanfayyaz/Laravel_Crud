@@ -12,10 +12,10 @@ class CrudController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $crud = Crud::latest()->pagination(5);
-        return view('crud.index',compact('curd'))->with('i',(request()->input('page',1)-1)*5);
+        $crud = $request->all();
+        return view('crud.index',compact($crud));
     }
 
     /**
@@ -36,7 +36,18 @@ class CrudController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $crud = Crud::create($request->all());
+        return redirect()->back();
+        // $crud = array(
+        //     'firstname' => $request->firstname,
+        //     'lasttname' => $request->lasttname,
+        //     'gender' => $request->gender,
+        //     'country' => $request->country,
+        //     'city' => $request->city,
+        //     'address' => $request->addrress            
+        // );
+        // Crud::create($crud);
+        // return redirect('crud.index');
     }
 
     /**
