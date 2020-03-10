@@ -14,8 +14,8 @@ class CrudController extends Controller
      */
     public function index(Request $request)
     {
-        $crud = $request->all();
-        return view('crud.index',compact($crud));
+        $cruds = Crud::paginate(4);
+        return view('crud.index',compact('cruds'));
     }
 
     /**

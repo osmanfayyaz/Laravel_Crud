@@ -31,17 +31,20 @@
     .container{
       padding-top:100px;
     }
-    .modal-dialog{
-      /* width:50% !important;
-      max-width:1000px !important; */
-      max-height:50% !important;
-    }
+    /*.modal-dialog{*/
+    /*  !* width:50% !important;*/
+    /*  max-width:1000px !important; *!*/
+    /*  max-height:50% !important;*/
+    /*}*/
     .fas.fa-user.prefix.grey-text, .fas.fa-user-friends.prefix.grey-text ,
     .fas.fa-venus.prefix.grey-text,.fa.fa-map-marker.prefix.grey-text, 
     .fa.fa-map-marker-alt.prefix.grey-text, .fas.fa-address-card.prefix.grey-text{
    
-     color:#ddd !important;
+     color:purple !important;
 }
+      .table .container{
+        display: flex !important;
+      }
     </style>
 <body>
     <div class="container">
@@ -62,17 +65,27 @@
                       <th>Action</th>
                     </tr>
                     <tbody>
+                    @foreach($cruds as$key=> $crud)
                       <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <td>{{++$key}}</td>
+                        <td>{{$crud->image}}</td>
+                        <td>{{$crud->firstname}}</td>
+                        <td>{{$crud->lasttname}}</td>
+                        <td>{{$crud->gender}}</td>
+                        <td>{{$crud->country}}</td>
+                        <td>{{$crud->city}}</td>
+                        <td>{{$crud->address}}</td>
+                        <td class="container">
+
+                          <a href="" type="button" class="btn btn-success btn-sm mr-2">Show</a>
+                          <a href="" type="button" class="btn btn-info btn-sm mr-2">Edit</a>
+                          <a href="" type="button" class="btn btn-warning btn-sm mr-2">Delete</a>
+
+                        </td>
                       </tr>
+                @endforeach
                     </tbody>
+                {{$cruds->links()}}
               </thead>
             </table>
 
